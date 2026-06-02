@@ -14,4 +14,3 @@ This tool simulates real-world endpoint analysis and prepares for AI-driven thre
 - ✅ Basic security checks
 - ✅ JSON report generation
 
-## Project Structure
