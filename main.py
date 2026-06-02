@@ -1,4 +1,4 @@
-rom system_scanner import run_scan
+from system_scanner import run_scan
 
 def main():
     result = run_scan()
