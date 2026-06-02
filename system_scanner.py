@@ -28,7 +28,8 @@ def run_scan():
         "system": get_system_info(),
         "network": get_network_info(),
         "processes": get_running_processes(),
-        "open_ports": get_open_ports()
+        "open_ports": get_open_ports(),
+        "cpu_memory": get_cpu_memory()
     }
 
     # Ensure output folder exists
@@ -92,3 +93,14 @@ def get_security_risks(data):
         risks.append({"type": "clean", "detail": "No obvious risks detected"})
     
     return risks
+
+# Get CPU and memory usage
+def get_cpu_memory():
+    import psutil
+    return {
+        "cpu_percent": psutil.cpu_percent(interval=1),
+        "cpu_cores": psutil.cpu_count(),
+        "memory_total_gb": round(psutil.virtual_memory().total / (1024**3), 2),
+        "memory_used_gb": round(psutil.virtual_memory().used / (1024**3), 2),
+        "memory_percent": psutil.virtual_memory().percent
+    }

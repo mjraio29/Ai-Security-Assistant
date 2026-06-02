@@ -96,30 +96,35 @@
             "name": "bash"
         },
         {
-            "pid": 23846,
+            "pid": 25591,
             "status": "sleeping",
             "name": "sleep"
         },
         {
-            "pid": 23854,
+            "pid": 25602,
+            "status": "sleeping",
+            "name": "sh"
+        },
+        {
+            "pid": 25603,
+            "status": "sleeping",
+            "name": "cpuUsage.sh"
+        },
+        {
+            "pid": 25606,
+            "status": "sleeping",
+            "name": "sleep"
+        },
+        {
+            "pid": 25608,
             "status": "running",
             "name": "python"
         }
     ],
     "open_ports": [
         {
-            "port": 12563,
-            "address": "127.0.0.1",
-            "status": "LISTEN"
-        },
-        {
-            "port": 16635,
-            "address": "127.0.0.1",
-            "status": "LISTEN"
-        },
-        {
-            "port": 2000,
-            "address": "0.0.0.0",
+            "port": 16634,
+            "address": "::1",
             "status": "LISTEN"
         },
         {
@@ -130,6 +135,46 @@
         {
             "port": 2000,
             "address": "::",
+            "status": "LISTEN"
+        },
+        {
+            "port": 53,
+            "address": "127.0.0.53",
+            "status": "LISTEN"
+        },
+        {
+            "port": 16635,
+            "address": "127.0.0.1",
+            "status": "LISTEN"
+        },
+        {
+            "port": 36175,
+            "address": "127.0.0.1",
+            "status": "LISTEN"
+        },
+        {
+            "port": 2222,
+            "address": "::",
+            "status": "LISTEN"
+        },
+        {
+            "port": 16635,
+            "address": "::1",
+            "status": "LISTEN"
+        },
+        {
+            "port": 16634,
+            "address": "127.0.0.1",
+            "status": "LISTEN"
+        },
+        {
+            "port": 2000,
+            "address": "0.0.0.0",
+            "status": "LISTEN"
+        },
+        {
+            "port": 12563,
+            "address": "127.0.0.1",
             "status": "LISTEN"
         },
         {
@@ -141,36 +186,13 @@
             "port": 13005,
             "address": "127.0.0.1",
             "status": "LISTEN"
-        },
-        {
-            "port": 53,
-            "address": "127.0.0.53",
-            "status": "LISTEN"
-        },
-        {
-            "port": 16635,
-            "address": "::1",
-            "status": "LISTEN"
-        },
-        {
-            "port": 2222,
-            "address": "::",
-            "status": "LISTEN"
-        },
-        {
-            "port": 16634,
-            "address": "::1",
-            "status": "LISTEN"
-        },
-        {
-            "port": 36175,
-            "address": "127.0.0.1",
-            "status": "LISTEN"
-        },
-        {
-            "port": 16634,
-            "address": "127.0.0.1",
-            "status": "LISTEN"
         }
-    ]
+    ],
+    "cpu_memory": {
+        "cpu_percent": 9.6,
+        "cpu_cores": 4,
+        "memory_total_gb": 15.62,
+        "memory_used_gb": 2.13,
+        "memory_percent": 13.6
+    }
 }
