@@ -1,0 +1,109 @@
+{
+    "system": {
+        "os": "Linux",
+        "os_version": "6.8.0-1052-azure",
+        "machine": "x86_64",
+        "processor": "x86_64"
+    },
+    "network": {
+        "hostname": "codespaces-97366f",
+        "ip_address": "127.0.0.1"
+    },
+    "processes": [
+        {
+            "pid": 1,
+            "name": "docker-init",
+            "status": "sleeping"
+        },
+        {
+            "pid": 7,
+            "name": "sh",
+            "status": "sleeping"
+        },
+        {
+            "pid": 227,
+            "name": "sshd",
+            "status": "sleeping"
+        },
+        {
+            "pid": 257,
+            "name": "dockerd",
+            "status": "sleeping"
+        },
+        {
+            "pid": 573,
+            "name": "containerd",
+            "status": "sleeping"
+        },
+        {
+            "pid": 1567,
+            "name": "sh",
+            "status": "sleeping"
+        },
+        {
+            "pid": 1595,
+            "name": "sh",
+            "status": "sleeping"
+        },
+        {
+            "pid": 2217,
+            "name": "sh",
+            "status": "sleeping"
+        },
+        {
+            "pid": 2226,
+            "name": "node",
+            "status": "sleeping"
+        },
+        {
+            "pid": 2565,
+            "name": "node",
+            "status": "sleeping"
+        },
+        {
+            "pid": 9125,
+            "name": "sh",
+            "status": "sleeping"
+        },
+        {
+            "pid": 9170,
+            "name": "sh",
+            "status": "sleeping"
+        },
+        {
+            "pid": 9342,
+            "name": "node",
+            "status": "sleeping"
+        },
+        {
+            "pid": 9354,
+            "name": "node",
+            "status": "sleeping"
+        },
+        {
+            "pid": 9377,
+            "name": "bash",
+            "status": "sleeping"
+        },
+        {
+            "pid": 9382,
+            "name": "bash",
+            "status": "sleeping"
+        },
+        {
+            "pid": 9385,
+            "name": "bash",
+            "status": "sleeping"
+        },
+        {
+            "pid": 20913,
+            "name": "sleep",
+            "status": "sleeping"
+        },
+        {
+            "pid": 20915,
+            "name": "python",
+            "status": "running"
+        }
+    ]
+}

@@ -26,7 +26,8 @@ def get_network_info():
 def run_scan():
     data = {
         "system": get_system_info(),
-        "network": get_network_info()
+        "network": get_network_info(),
+        "processes": get_running_processes()
     }
 
     # Ensure output folder exists
@@ -38,3 +39,14 @@ def run_scan():
 
     return data
 
+
+# Get running processes
+def get_running_processes():
+    import psutil
+    processes = []
+    for proc in psutil.process_iter(['pid', 'name', 'status']):
+        try:
+            processes.append(proc.info)
+        except psutil.NoSuchProcess:
+            pass
+    return processes
