@@ -27,7 +27,8 @@ def run_scan():
     data = {
         "system": get_system_info(),
         "network": get_network_info(),
-        "processes": get_running_processes()
+        "processes": get_running_processes(),
+        "open_ports": get_open_ports()
     }
 
     # Ensure output folder exists
@@ -50,3 +51,16 @@ def get_running_processes():
         except psutil.NoSuchProcess:
             pass
     return processes
+
+# Get open ports
+def get_open_ports():
+    import psutil
+    open_ports = []
+    for conn in psutil.net_connections(kind='inet'):
+        if conn.status == 'LISTEN':
+            open_ports.append({
+                "port": conn.laddr.port,
+                "address": conn.laddr.ip,
+                "status": conn.status
+            })
+    return open_ports
