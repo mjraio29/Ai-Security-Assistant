@@ -38,6 +38,7 @@ def run_scan():
     with open("output/report.json", "w") as f:
         json.dump(data, f, indent=4)
 
+    data["risks"] = get_security_risks(data)
     return data
 
 
@@ -64,3 +65,30 @@ def get_open_ports():
                 "status": conn.status
             })
     return open_ports
+
+# Flag security risks
+def get_security_risks(data):
+    risks = []
+    
+    # Suspicious ports to watch for
+    suspicious_ports = [23, 21, 4444, 1337, 31337, 8080]
+    for port_info in data.get("open_ports", []):
+        if port_info["port"] in suspicious_ports:
+            risks.append({
+                "type": "suspicious_port",
+                "detail": f"Suspicious port open: {port_info['port']}"
+            })
+    
+    # Suspicious process names
+    suspicious_processes = ["netcat", "nc", "nmap", "mimikatz", "meterpreter"]
+    for proc in data.get("processes", []):
+        if proc["name"].lower() in suspicious_processes:
+            risks.append({
+                "type": "suspicious_process",
+                "detail": f"Suspicious process running: {proc['name']}"
+            })
+    
+    if not risks:
+        risks.append({"type": "clean", "detail": "No obvious risks detected"})
+    
+    return risks

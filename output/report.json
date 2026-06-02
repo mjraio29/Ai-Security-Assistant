@@ -11,98 +11,98 @@
     },
     "processes": [
         {
-            "status": "sleeping",
             "pid": 1,
+            "status": "sleeping",
             "name": "docker-init"
         },
         {
-            "status": "sleeping",
             "pid": 7,
+            "status": "sleeping",
             "name": "sh"
         },
         {
-            "status": "sleeping",
             "pid": 227,
+            "status": "sleeping",
             "name": "sshd"
         },
         {
-            "status": "sleeping",
             "pid": 257,
+            "status": "sleeping",
             "name": "dockerd"
         },
         {
-            "status": "sleeping",
             "pid": 573,
+            "status": "sleeping",
             "name": "containerd"
         },
         {
-            "status": "sleeping",
             "pid": 1567,
+            "status": "sleeping",
             "name": "sh"
         },
         {
-            "status": "sleeping",
             "pid": 1595,
+            "status": "sleeping",
             "name": "sh"
         },
         {
-            "status": "sleeping",
             "pid": 2217,
+            "status": "sleeping",
             "name": "sh"
         },
         {
-            "status": "sleeping",
             "pid": 2226,
+            "status": "sleeping",
             "name": "node"
         },
         {
-            "status": "sleeping",
             "pid": 2565,
+            "status": "sleeping",
             "name": "node"
         },
         {
-            "status": "sleeping",
             "pid": 9125,
+            "status": "sleeping",
             "name": "sh"
         },
         {
-            "status": "sleeping",
             "pid": 9170,
+            "status": "sleeping",
             "name": "sh"
         },
         {
-            "status": "sleeping",
             "pid": 9342,
+            "status": "sleeping",
             "name": "node"
         },
         {
-            "status": "sleeping",
             "pid": 9354,
+            "status": "sleeping",
             "name": "node"
         },
         {
-            "status": "sleeping",
             "pid": 9377,
+            "status": "sleeping",
             "name": "bash"
         },
         {
-            "status": "sleeping",
             "pid": 9382,
+            "status": "sleeping",
             "name": "bash"
         },
         {
-            "status": "sleeping",
             "pid": 9385,
+            "status": "sleeping",
             "name": "bash"
         },
         {
+            "pid": 23846,
             "status": "sleeping",
-            "pid": 22703,
             "name": "sleep"
         },
         {
+            "pid": 23854,
             "status": "running",
-            "pid": 22705,
             "name": "python"
         }
     ],
@@ -114,16 +114,6 @@
         },
         {
             "port": 16635,
-            "address": "::1",
-            "status": "LISTEN"
-        },
-        {
-            "port": 2222,
-            "address": "::",
-            "status": "LISTEN"
-        },
-        {
-            "port": 36175,
             "address": "127.0.0.1",
             "status": "LISTEN"
         },
@@ -133,13 +123,13 @@
             "status": "LISTEN"
         },
         {
-            "port": 13005,
-            "address": "127.0.0.1",
+            "port": 2222,
+            "address": "0.0.0.0",
             "status": "LISTEN"
         },
         {
-            "port": 2222,
-            "address": "0.0.0.0",
+            "port": 2000,
+            "address": "::",
             "status": "LISTEN"
         },
         {
@@ -148,8 +138,23 @@
             "status": "LISTEN"
         },
         {
-            "port": 16634,
+            "port": 13005,
             "address": "127.0.0.1",
+            "status": "LISTEN"
+        },
+        {
+            "port": 53,
+            "address": "127.0.0.53",
+            "status": "LISTEN"
+        },
+        {
+            "port": 16635,
+            "address": "::1",
+            "status": "LISTEN"
+        },
+        {
+            "port": 2222,
+            "address": "::",
             "status": "LISTEN"
         },
         {
@@ -158,18 +163,13 @@
             "status": "LISTEN"
         },
         {
-            "port": 16635,
+            "port": 36175,
             "address": "127.0.0.1",
             "status": "LISTEN"
         },
         {
-            "port": 2000,
-            "address": "::",
-            "status": "LISTEN"
-        },
-        {
-            "port": 53,
-            "address": "127.0.0.53",
+            "port": 16634,
+            "address": "127.0.0.1",
             "status": "LISTEN"
         }
     ]
