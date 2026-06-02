@@ -184,5 +184,12 @@
         "memory_total_gb": 15.62,
         "memory_used_gb": 3.11,
         "memory_percent": 19.9
-    }
+    },
+    "risks": [
+        {
+            "type": "clean",
+            "detail": "No obvious risks detected"
+        }
+    ],
+    "timestamp": "2026-06-02 20:28:49"
 }
